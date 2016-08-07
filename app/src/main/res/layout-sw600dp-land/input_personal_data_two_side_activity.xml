@@ -10,6 +10,7 @@
         android:layout_height="match_parent"
         android:id="@+id/wrapTwoSide"
         android:weightSum="2">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -17,10 +18,12 @@
             android:background="@color/colorPrimaryDark">
 
             <ImageView
+                android:id="@+id/logo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/logo"
-                android:layout_centerInParent="true"/>
+                android:layout_centerInParent="true"
+                android:background="@drawable/logo"/>
+
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -37,29 +40,46 @@
                     android:layout_height="wrap_content">
 
                     <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/welcome_text_wrap"
+                        android:orientation="horizontal"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+                        <com.example.samudra.guestbook.ui.textview.PacificoTextView
+                            android:id="@+id/welcome_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Nice to Meetcha"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="50dp"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_below="@+id/welcome_text_wrap"
                         android:id="@+id/firstLine"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:weightSum="2"
-                        android:padding="@dimen/activity_vertical_margin"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true">
+                        android:padding="@dimen/activity_vertical_margin">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:orientation="vertical"
-                            android:padding="5dp">
+                            android:padding="@dimen/wrap_label_padding">
 
-                            <TextView
+                            <com.example.samudra.guestbook.ui.textview.PacificoTextView
                                 android:textColor="@color/colorPrimaryDark"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textSize="20dp"
-                                android:text="Name *"/>
+                                android:textSize="@dimen/label_size"
+                                android:text="Name *"
+                                android:id="@+id/label_name"/>
                             <EditText
                                 android:id="@+id/guest_name"
                                 android:singleLine="true"
@@ -78,13 +98,13 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:orientation="vertical"
-                            android:padding="5dp">
+                            android:padding="@dimen/wrap_label_padding">
 
-                            <TextView
+                            <com.example.samudra.guestbook.ui.textview.PacificoTextView
                                 android:textColor="@color/colorPrimaryDark"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textSize="20dp"
+                                android:textSize="@dimen/label_size"
                                 android:text="Company *"/>
                             <EditText
                                 android:id="@+id/guest_company"
@@ -116,13 +136,13 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:orientation="vertical"
-                            android:padding="5dp">
+                            android:padding="@dimen/wrap_label_padding">
 
-                            <TextView
+                            <com.example.samudra.guestbook.ui.textview.PacificoTextView
                                 android:textColor="@color/colorPrimaryDark"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textSize="20dp"
+                                android:textSize="@dimen/label_size"
                                 android:text="Phone *"/>
                             <EditText
                                 android:id="@+id/guest_phone"
@@ -143,13 +163,13 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:orientation="vertical"
-                            android:padding="5dp">
+                            android:padding="@dimen/wrap_label_padding">
 
-                            <TextView
+                            <com.example.samudra.guestbook.ui.textview.PacificoTextView
                                 android:textColor="@color/colorPrimaryDark"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textSize="20dp"
+                                android:textSize="@dimen/label_size"
                                 android:text="Needs *"/>
                             <EditText
                                 android:id="@+id/guest_needs"
@@ -181,13 +201,13 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:orientation="vertical"
-                            android:padding="5dp">
+                            android:padding="@dimen/wrap_label_padding">
 
-                            <TextView
+                            <com.example.samudra.guestbook.ui.textview.PacificoTextView
                                 android:textColor="@color/colorPrimaryDark"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textSize="20dp"
+                                android:textSize="@dimen/label_size"
                                 android:text="Rack Number *"/>
                             <EditText
                                 android:id="@+id/guest_rack"
@@ -207,13 +227,13 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:orientation="vertical"
-                            android:padding="5dp">
+                            android:padding="@dimen/wrap_label_padding">
 
-                            <TextView
+                            <com.example.samudra.guestbook.ui.textview.PacificoTextView
                                 android:textColor="@color/colorPrimaryDark"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:textSize="20dp"
+                                android:textSize="@dimen/label_size"
                                 android:text="Badge Number *"/>
                             <EditText
                                 android:id="@+id/guest_badge"
@@ -234,12 +254,13 @@
 
             </ScrollView>
 
-            <Button
+            <com.example.samudra.guestbook.ui.textview.PacificoButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:background="@color/colorAccent"
                 android:text="Next"
+                android:textSize="@dimen/label_size"
                 android:padding="@dimen/activity_vertical_margin"
                 android:id="@+id/buttonNextToSignature"/>
         </RelativeLayout>

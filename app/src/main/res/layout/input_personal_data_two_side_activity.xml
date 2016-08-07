@@ -9,19 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/wrapTwoSide"
-        android:weightSum="2">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@color/colorPrimaryDark">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/logo"
-                android:layout_centerInParent="true"/>
-        </RelativeLayout>
+        android:weightSum="1">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -32,72 +20,48 @@
                 android:layout_height="match_parent"
                 android:id="@+id/scrollViewInputData"
                 android:layout_above="@+id/buttonNextToSignature">
+
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
+
+                    <com.example.samudra.guestbook.ui.textview.PacificoTextView
+                        android:id="@+id/welcome_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nice to Meetcha!"
+                        android:textSize="40sp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:padding="@dimen/activity_vertical_margin"/>
+
                     <LinearLayout
+                        android:layout_below="@+id/welcome_text"
                         android:id="@+id/firstLine"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
-                        android:padding="@dimen/activity_vertical_margin"
-                        android:layout_alignParentTop="true"
-                        android:layout_alignParentLeft="true"
-                        android:layout_alignParentStart="true">
+                        android:orientation="vertical"
+                        android:padding="@dimen/activity_vertical_margin">
 
-                        <LinearLayout
+                        <com.example.samudra.guestbook.ui.textview.PacificoTextView
+                            android:textColor="@color/colorPrimaryDark"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="5dp">
-
-                            <TextView
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="20dp"
-                                android:text="Name *"/>
-                            <EditText
-                                android:id="@+id/guest_name"
-                                android:singleLine="true"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="Name"
-                                android:textColorHint="@color/colorPlaceholder"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_marginTop="10dp"
-                                android:padding="7dp"
-                                android:background="@drawable/bottom_border"/>
-                        </LinearLayout>
-
-                        <LinearLayout
+                            android:textSize="@dimen/label_size_phone"
+                            android:text="@string/label_name_phone"
+                            android:id="@+id/label_name"/>
+                        <EditText
+                            android:id="@+id/guest_name"
+                            android:singleLine="true"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="5dp">
-
-                            <TextView
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="20dp"
-                                android:text="Company *"/>
-                            <EditText
-                                android:id="@+id/guest_company"
-                                android:singleLine="true"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="Company"
-                                android:textColorHint="@color/colorPlaceholder"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_marginTop="10dp"
-                                android:padding="7dp"
-                                android:background="@drawable/bottom_border"/>
-                        </LinearLayout>
+                            android:hint="Name"
+                            android:textColorHint="@color/colorPlaceholder"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginTop="10dp"
+                            android:padding="7dp"
+                            android:background="@drawable/bottom_border"/>
 
                     </LinearLayout>
 
@@ -106,135 +70,155 @@
                         android:layout_below="@+id/firstLine"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
+                        android:orientation="vertical"
                         android:padding="@dimen/activity_vertical_margin"
                         android:layout_marginTop="10dp">
 
-                        <LinearLayout
+                        <com.example.samudra.guestbook.ui.textview.PacificoTextView
+                            android:textColor="@color/colorPrimaryDark"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="5dp">
-
-                            <TextView
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="20dp"
-                                android:text="Phone *"/>
-                            <EditText
-                                android:id="@+id/guest_phone"
-                                android:singleLine="true"
-                                android:inputType="phone"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="Phone number"
-                                android:textColorHint="@color/colorPlaceholder"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_marginTop="10dp"
-                                android:padding="7dp"
-                                android:background="@drawable/bottom_border"/>
-                        </LinearLayout>
-
-                        <LinearLayout
+                            android:textSize="@dimen/label_size_phone"
+                            android:text="@string/label_company_phone"
+                            android:id="@+id/label_company"/>
+                        <EditText
+                            android:id="@+id/guest_company"
+                            android:singleLine="true"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="5dp">
-
-                            <TextView
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="20dp"
-                                android:text="Needs *"/>
-                            <EditText
-                                android:id="@+id/guest_needs"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="Needs"
-                                android:textColorHint="@color/colorPlaceholder"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_marginTop="10dp"
-                                android:padding="7dp"
-                                android:background="@drawable/bottom_border"/>
-                        </LinearLayout>
-
+                            android:hint="Company"
+                            android:textColorHint="@color/colorPlaceholder"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginTop="10dp"
+                            android:padding="7dp"
+                            android:background="@drawable/bottom_border"/>
                     </LinearLayout>
-
 
                     <LinearLayout
                         android:id="@+id/thirdLine"
                         android:layout_below="@+id/secondLine"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="2"
+                        android:orientation="vertical"
                         android:padding="@dimen/activity_vertical_margin"
                         android:layout_marginTop="10dp">
 
-                        <LinearLayout
+                        <com.example.samudra.guestbook.ui.textview.PacificoTextView
+                            android:textColor="@color/colorPrimaryDark"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="5dp">
-
-                            <TextView
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="20dp"
-                                android:text="Rack Number *"/>
-                            <EditText
-                                android:id="@+id/guest_rack"
-                                android:singleLine="true"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="Select the Rack Number"
-                                android:textColorHint="@color/colorPlaceholder"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_marginTop="10dp"
-                                android:padding="7dp"
-                                android:background="@drawable/bottom_border"/>
-                        </LinearLayout>
-
-                        <LinearLayout
+                            android:textSize="@dimen/label_size_phone"
+                            android:text="@string/label_phonenumber_phone"
+                            android:id="@+id/label_phone"/>
+                        <EditText
+                            android:id="@+id/guest_phone"
+                            android:singleLine="true"
+                            android:inputType="phone"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="vertical"
-                            android:padding="5dp">
+                            android:hint="Phone number"
+                            android:textColorHint="@color/colorPlaceholder"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginTop="10dp"
+                            android:padding="7dp"
+                            android:background="@drawable/bottom_border"/>
 
-                            <TextView
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="20dp"
-                                android:text="Badge Number *"/>
-                            <EditText
-                                android:id="@+id/guest_badge"
-                                android:singleLine="true"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="Select the Badge Number"
-                                android:textColorHint="@color/colorPlaceholder"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_marginTop="10dp"
-                                android:padding="7dp"
-                                android:background="@drawable/bottom_border"/>
-                        </LinearLayout>
 
                     </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/fourthLine"
+                        android:layout_below="@+id/thirdLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="10dp">
+
+                        <com.example.samudra.guestbook.ui.textview.PacificoTextView
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/label_size_phone"
+                            android:text="@string/label_needs_phone"
+                            android:id="@+id/label_needs"/>
+                        <EditText
+                            android:id="@+id/guest_needs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Needs"
+                            android:textColorHint="@color/colorPlaceholder"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginTop="10dp"
+                            android:padding="7dp"
+                            android:background="@drawable/bottom_border"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/fifthLine"
+                        android:layout_below="@+id/fourthLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="10dp">
+
+                        <com.example.samudra.guestbook.ui.textview.PacificoTextView
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/label_size_phone"
+                            android:text="@string/label_rack_phone"
+                            android:id="@+id/label_rack"/>
+                        <EditText
+                            android:id="@+id/guest_rack"
+                            android:singleLine="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Select the Rack Number"
+                            android:textColorHint="@color/colorPlaceholder"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginTop="10dp"
+                            android:padding="7dp"
+                            android:background="@drawable/bottom_border"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sixthLine"
+                        android:layout_below="@+id/fifthLine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/activity_vertical_margin"
+                        android:layout_marginTop="10dp">
+
+                        <com.example.samudra.guestbook.ui.textview.PacificoTextView
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/label_size_phone"
+                            android:text="@string/label_badge_phone"
+                            android:id="@+id/label_badge"/>
+                        <EditText
+                            android:id="@+id/guest_badge"
+                            android:singleLine="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Select the Badge Number"
+                            android:textColorHint="@color/colorPlaceholder"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_marginTop="10dp"
+                            android:padding="7dp"
+                            android:background="@drawable/bottom_border"/>
+                    </LinearLayout>
+
 
                 </RelativeLayout>
 
             </ScrollView>
 
-            <Button
+            <com.example.samudra.guestbook.ui.textview.PacificoButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
