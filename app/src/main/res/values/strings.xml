@@ -98,4 +98,25 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+
+    <string name="nice_to_meet_you">Hai, Selamat Datang</string>
+    <string name="email">Email</string>
+    <string name="whats_your_name">Siapa nama anda?</string>
+    <string name="whats_your_name_hint">Masukkan nama anda</string>
+    <string name="for_who_do_you_work">Perusahaan anda?</string>
+    <string name="for_who_do_you_work_hint">Masukkan nama perusahaan/instansi anda</string>
+    <string name="do_your_have_phone_number">Anda punya no telp?</string>
+    <string name="do_your_have_phone_number_hint">Masukkan no telepon anda</string>
+    <string name="needs">Apa keperluan anda?</string>
+    <string name="needs_hint">Tuliskan keperluan anda</string>
+    <string name="rack_no">Nomor Rack?</string>
+    <string name="rack_no_hint">Nomor rack anda</string>
+    <string name="badge_no">Nomor Badge</string>
+    <string name="badge_no_hint">Nomor Badge dari customer service kami</string>
+
+    <string name="signin">Daftar</string>
+    <string name="next">Lanjutkan</string>
+    <string name="please_sign_below">Silahkan Tanda Tangan di bawah ini</string>
+    <string name="clear">Hapus</string>
+    <string name="take_picture">Ambil Photo</string>
 </resources>

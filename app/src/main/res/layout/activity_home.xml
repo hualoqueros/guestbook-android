@@ -24,7 +24,7 @@
     <EditText
         android:id="@+id/guestEmail"
         android:layout_width="400dp"
-        android:hint="Email"
+        android:hint="@string/email"
         android:textColorHint="@color/colorPlaceholder"
         android:singleLine="true"
         android:layout_height="wrap_content"
@@ -40,7 +40,7 @@
         android:id="@+id/signIn"
         android:layout_width="130dp"
         android:layout_height="130dp"
-        android:text="Sign In"
+        android:text="@string/signin"
         android:textSize="20dp"
         android:textColor="@color/colorWhite"
         android:layout_centerHorizontal="true"

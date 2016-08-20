@@ -16,7 +16,7 @@
             android:textAlignment="center"
             android:textStyle="bold"
             android:textSize="@dimen/label_size"
-            android:text="Please sign below"
+            android:text="@string/please_sign_below"
             android:layout_marginTop="150dp"/>
         <RelativeLayout
             android:layout_below="@id/signBelow"
@@ -63,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:background="@color/colorAccent"
-            android:text="Clear"/>
+            android:text="@string/clear"/>
         <com.example.samudra.guestbook.ui.textview.PacificoButton
             android:layout_weight="1"
             android:id="@+id/getsign"
@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:background="@color/colorAccent"
-            android:text="Take Picture"/>
+            android:text="@string/take_picture"/>
     </LinearLayout>
 
 </RelativeLayout>

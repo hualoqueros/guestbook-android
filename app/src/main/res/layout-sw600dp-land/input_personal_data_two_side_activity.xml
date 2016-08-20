@@ -51,7 +51,7 @@
                             android:id="@+id/welcome_text"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="Nice to Meetcha"
+                            android:text="@string/nice_to_meet_you"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="50dp"
                             android:textAlignment="center" />
@@ -78,14 +78,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textSize="@dimen/label_size"
-                                android:text="Name *"
+                                android:text="@string/whats_your_name"
                                 android:id="@+id/label_name"/>
                             <EditText
                                 android:id="@+id/guest_name"
                                 android:singleLine="true"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="Name"
+                                android:hint="@string/whats_your_name_hint"
                                 android:textColorHint="@color/colorPlaceholder"
                                 android:textColor="@color/colorPrimaryDark"
                                 android:layout_marginTop="10dp"
@@ -105,13 +105,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textSize="@dimen/label_size"
-                                android:text="Company *"/>
+                                android:text="@string/for_who_do_you_work"/>
                             <EditText
                                 android:id="@+id/guest_company"
                                 android:singleLine="true"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="Company"
+                                android:hint="@string/for_who_do_you_work_hint"
                                 android:textColorHint="@color/colorPlaceholder"
                                 android:textColor="@color/colorPrimaryDark"
                                 android:layout_marginTop="10dp"
@@ -143,14 +143,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textSize="@dimen/label_size"
-                                android:text="Phone *"/>
+                                android:text="@string/do_your_have_phone_number"/>
                             <EditText
                                 android:id="@+id/guest_phone"
                                 android:singleLine="true"
                                 android:inputType="phone"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="Phone number"
+                                android:hint="@string/do_your_have_phone_number_hint"
                                 android:textColorHint="@color/colorPlaceholder"
                                 android:textColor="@color/colorPrimaryDark"
                                 android:layout_marginTop="10dp"
@@ -170,12 +170,12 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textSize="@dimen/label_size"
-                                android:text="Needs *"/>
+                                android:text="@string/needs"/>
                             <EditText
                                 android:id="@+id/guest_needs"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="Needs"
+                                android:hint="@string/needs_hint"
                                 android:textColorHint="@color/colorPlaceholder"
                                 android:textColor="@color/colorPrimaryDark"
                                 android:layout_marginTop="10dp"
@@ -208,13 +208,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textSize="@dimen/label_size"
-                                android:text="Rack Number *"/>
+                                android:text="@string/rack_no"/>
                             <EditText
                                 android:id="@+id/guest_rack"
                                 android:singleLine="true"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="Select the Rack Number"
+                                android:hint="@string/rack_no_hint"
                                 android:textColorHint="@color/colorPlaceholder"
                                 android:textColor="@color/colorPrimaryDark"
                                 android:layout_marginTop="10dp"
@@ -234,13 +234,13 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textSize="@dimen/label_size"
-                                android:text="Badge Number *"/>
+                                android:text="@string/badge_no"/>
                             <EditText
                                 android:id="@+id/guest_badge"
                                 android:singleLine="true"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="Select the Badge Number"
+                                android:hint="@string/badge_no_hint"
                                 android:textColorHint="@color/colorPlaceholder"
                                 android:textColor="@color/colorPrimaryDark"
                                 android:layout_marginTop="10dp"
@@ -259,7 +259,7 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:background="@color/colorAccent"
-                android:text="Next"
+                android:text="@string/next"
                 android:textSize="@dimen/label_size"
                 android:padding="@dimen/activity_vertical_margin"
                 android:id="@+id/buttonNextToSignature"/>
