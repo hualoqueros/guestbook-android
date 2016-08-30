@@ -78,8 +78,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textSize="@dimen/label_size"
-                                android:text="@string/whats_your_name"
-                                android:id="@+id/label_name"/>
+                                android:id="@+id/label_1"/>
                             <EditText
                                 android:id="@+id/guest_name"
                                 android:singleLine="true"
@@ -105,7 +104,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:textSize="@dimen/label_size"
-                                android:text="@string/for_who_do_you_work"/>
+                                android:id="@+id/label_2"/>
                             <EditText
                                 android:id="@+id/guest_company"
                                 android:singleLine="true"

@@ -13,69 +13,97 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="@dimen/activity_vertical_margin">
-        <TextView
+        <com.example.samudra.guestbook.ui.textview.PacificoTextView
+            android:textSize="@dimen/label_size"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:padding="@dimen/activity_vertical_margin"/>
         <TextView
+            android:textSize="@dimen/label_size"
             android:id="@+id/summaryName"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <TextView
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"/>
+        <com.example.samudra.guestbook.ui.textview.PacificoTextView
+            android:textSize="@dimen/label_size"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Email"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:padding="@dimen/activity_vertical_margin"/>
         <TextView
+            android:textSize="@dimen/label_size"
             android:id="@+id/summaryEmail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <TextView
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"/>
+        <com.example.samudra.guestbook.ui.textview.PacificoTextView
+            android:textSize="@dimen/label_size"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Company"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:padding="@dimen/activity_vertical_margin"/>
         <TextView
+            android:textSize="@dimen/label_size"
             android:id="@+id/summaryCompany"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <TextView
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"/>
+        <com.example.samudra.guestbook.ui.textview.PacificoTextView
+            android:textSize="@dimen/label_size"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Phone"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:padding="@dimen/activity_vertical_margin"/>
         <TextView
+            android:textSize="@dimen/label_size"
             android:id="@+id/summaryPhone"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <TextView
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"/>
+        <com.example.samudra.guestbook.ui.textview.PacificoTextView
+            android:textSize="@dimen/label_size"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Needs"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:padding="@dimen/activity_vertical_margin"/>
         <TextView
+            android:textSize="@dimen/label_size"
             android:id="@+id/summaryNeeds"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <TextView
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"/>
+        <com.example.samudra.guestbook.ui.textview.PacificoTextView
+            android:textSize="@dimen/label_size"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Rack Number"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:padding="@dimen/activity_vertical_margin"/>
         <TextView
+            android:textSize="@dimen/label_size"
             android:id="@+id/summaryRack"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-        <TextView
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"/>
+        <com.example.samudra.guestbook.ui.textview.PacificoTextView
+            android:textSize="@dimen/label_size"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Badge Number"
-            android:textStyle="bold"/>
+            android:textStyle="bold"
+            android:padding="@dimen/activity_vertical_margin"/>
         <TextView
+            android:textSize="@dimen/label_size"
             android:id="@+id/summaryBadge"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin"/>
         <ImageView
             android:id="@+id/summarySignature"
             android:layout_width="match_parent"
