@@ -71,25 +71,9 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:orientation="vertical"
-                            android:padding="@dimen/wrap_label_padding">
+                            android:padding="@dimen/wrap_label_padding"
+                            android:id="@+id/wrap_1">
 
-                            <com.example.samudra.guestbook.ui.textview.PacificoTextView
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="@dimen/label_size"
-                                android:id="@+id/label_1"/>
-                            <EditText
-                                android:id="@+id/guest_name"
-                                android:singleLine="true"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/whats_your_name_hint"
-                                android:textColorHint="@color/colorPlaceholder"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_marginTop="10dp"
-                                android:padding="7dp"
-                                android:background="@drawable/bottom_border"/>
                         </LinearLayout>
 
                         <LinearLayout
@@ -97,25 +81,10 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:orientation="vertical"
-                            android:padding="@dimen/wrap_label_padding">
+                            android:padding="@dimen/wrap_label_padding"
+                            android:id="@+id/wrap_2">
 
-                            <com.example.samudra.guestbook.ui.textview.PacificoTextView
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="@dimen/label_size"
-                                android:id="@+id/label_2"/>
-                            <EditText
-                                android:id="@+id/guest_company"
-                                android:singleLine="true"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/for_who_do_you_work_hint"
-                                android:textColorHint="@color/colorPlaceholder"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_marginTop="10dp"
-                                android:padding="7dp"
-                                android:background="@drawable/bottom_border"/>
+
                         </LinearLayout>
 
                     </LinearLayout>
@@ -135,26 +104,8 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:orientation="vertical"
-                            android:padding="@dimen/wrap_label_padding">
-
-                            <com.example.samudra.guestbook.ui.textview.PacificoTextView
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="@dimen/label_size"
-                                android:text="@string/do_your_have_phone_number"/>
-                            <EditText
-                                android:id="@+id/guest_phone"
-                                android:singleLine="true"
-                                android:inputType="phone"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/do_your_have_phone_number_hint"
-                                android:textColorHint="@color/colorPlaceholder"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_marginTop="10dp"
-                                android:padding="7dp"
-                                android:background="@drawable/bottom_border"/>
+                            android:padding="@dimen/wrap_label_padding"
+                            android:id="@+id/wrap_3">
                         </LinearLayout>
 
                         <LinearLayout
@@ -162,24 +113,10 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:orientation="vertical"
-                            android:padding="@dimen/wrap_label_padding">
+                            android:padding="@dimen/wrap_label_padding"
+                            android:id="@+id/wrap_4">
 
-                            <com.example.samudra.guestbook.ui.textview.PacificoTextView
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="@dimen/label_size"
-                                android:text="@string/needs"/>
-                            <EditText
-                                android:id="@+id/guest_needs"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/needs_hint"
-                                android:textColorHint="@color/colorPlaceholder"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_marginTop="10dp"
-                                android:padding="7dp"
-                                android:background="@drawable/bottom_border"/>
+
                         </LinearLayout>
 
                     </LinearLayout>
@@ -200,25 +137,10 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:orientation="vertical"
-                            android:padding="@dimen/wrap_label_padding">
+                            android:padding="@dimen/wrap_label_padding"
+                            android:id="@+id/wrap_5">
 
-                            <com.example.samudra.guestbook.ui.textview.PacificoTextView
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="@dimen/label_size"
-                                android:text="@string/rack_no"/>
-                            <EditText
-                                android:id="@+id/guest_rack"
-                                android:singleLine="true"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/rack_no_hint"
-                                android:textColorHint="@color/colorPlaceholder"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_marginTop="10dp"
-                                android:padding="7dp"
-                                android:background="@drawable/bottom_border"/>
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -226,25 +148,10 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:orientation="vertical"
-                            android:padding="@dimen/wrap_label_padding">
+                            android:padding="@dimen/wrap_label_padding"
+                            android:id="@+id/wrap_6">
 
-                            <com.example.samudra.guestbook.ui.textview.PacificoTextView
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:textSize="@dimen/label_size"
-                                android:text="@string/badge_no"/>
-                            <EditText
-                                android:id="@+id/guest_badge"
-                                android:singleLine="true"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="@string/badge_no_hint"
-                                android:textColorHint="@color/colorPlaceholder"
-                                android:textColor="@color/colorPrimaryDark"
-                                android:layout_marginTop="10dp"
-                                android:padding="7dp"
-                                android:background="@drawable/bottom_border"/>
+
                         </LinearLayout>
 
                     </LinearLayout>
